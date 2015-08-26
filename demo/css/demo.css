@@ -4,7 +4,7 @@
     color: #a94442;
 }
 
-.has-icon:after {
+.feedback-control:after {
     position: absolute;
     top: 0;
     right: 15px;

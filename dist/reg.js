@@ -1,13 +1,13 @@
-regs: {
+var regs = {
     // 是否为空
-    required: function(value, param, element) {
-        if (this.checkable(element)) {
-            return element.checked;
+    required: function(value, param, item) {
+        if (this.checkable(item)) {
+            return item[0].checked;
         }
         return $.trim(value).length > 0;
     },
-    checkable: function(element) {
-        return (/radio|checkbox/i).test(element.type);
+    checkable: function(item) {
+        return (/radio|checkbox/i).test(item[0].type);
     },
     // 重复
     equalTo: function(newvalue, oldvalue) {

@@ -20,20 +20,20 @@
         <div class="panel panel-default">
             <div class="panel-heading">基本款--登陆表单</div>
             <div class="panel-body">
-                <form class="form-horizontal" id="form1">
+                <form class="form-horizontal" id="form1" action="js/demo.json">
                     <div class="form-group">
                         <label for="inputUname1" class="col-sm-2 control-label">用户名</label>
-                        <div class="col-sm-5 has-icon has-success">
+                        <div class="col-sm-5 feedback-control">
                             <input type="text" name="inputUname1" class="form-control" id="inputUname1" placeholder="请输入用户名">
                         </div>
                         <div class="col-sm-5 help-block side-msg"></div>
                     </div>
                     <div class="form-group">
                         <label for="inputPassword1" class="col-sm-2 control-label">密码</label>
-                        <div class="col-sm-5 has-icon has-error">
+                        <div class="col-sm-5 feedback-control">
                             <input type="password" name="inputPassword1" class="form-control" id="inputPassword1" placeholder="请输入密码">
                         </div>
-                        <div class="col-sm-5 help-block side-msg">请输入密码</div>
+                        <div class="col-sm-5 help-block side-msg"></div>
                     </div>
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-5">
@@ -55,9 +55,46 @@
                 </form>
             </div>
         </div>
+        <div class="panel panel-success">
+            <div class="panel-heading">经典款款--注册表单</div>
+            <div class="panel-body">
+                <form class="form-horizontal" id="form2" action="js/demo.json">
+                    <div class="form-group">
+                        <label for="inputUname2" class="col-sm-2 control-label">用户名</label>
+                        <div class="col-sm-5 feedback-control">
+                            <input type="text" name="inputUname2" class="form-control" id="inputUname2" placeholder="请输入用户名">
+                        </div>
+                        <div class="col-sm-5 help-block side-msg"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword2" class="col-sm-2 control-label">密码</label>
+                        <div class="col-sm-5 feedback-control">
+                            <input type="password" name="inputPassword2" class="form-control" id="inputPassword2" placeholder="请输入密码">
+                        </div>
+                        <div class="col-sm-5 help-block side-msg"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword2R" class="col-sm-2 control-label">确认密码</label>
+                        <div class="col-sm-5 feedback-control">
+                            <input type="password" name="inputPassword2R" class="form-control" id="inputPassword2R" placeholder="请确认密码">
+                        </div>
+                        <div class="col-sm-5 help-block side-msg"></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-1">
+                            <button type="submit" class="btn btn-primary">注册</button>
+                        </div>
+                        <div class="col-sm-4">
+                            <span class="help-block bottom-msg"></span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
-    <script type="text/javascript" src="../libs/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../libs/jquery/jquery.js"></script>
     <script type="text/javascript" src="../dist/easy-validator.js"></script>
+    <script type="text/javascript" src="../dist/reg.js"></script>
     <script type="text/javascript" src="js/demo.js"></script>
     <!-- 以下脚本无关紧要 -->
     <!-- <script src="../libs/prism/prism.js"></script> -->
